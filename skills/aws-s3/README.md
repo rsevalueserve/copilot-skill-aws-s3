@@ -1,13 +1,8 @@
-# Copilot Skills - AWS S3
+# AWS S3 Management Skill for GitHub Copilot
 
-Collection of GitHub Copilot skills for AWS S3 management.
+Global skill for managing AWS S3 operations with automatic Windows/WSL path translation.
 
-## Available Skills
-
-### aws-s3
-Upload, download, list, and manage files in AWS S3 with automatic Windows/Linux path translation.
-
-**Features:**
+## Features
 - ✅ Upload/Download files to/from S3
 - ✅ Automatic Windows (C:\) to Linux (/mnt/c/) path conversion
 - ✅ List buckets and objects
@@ -16,8 +11,16 @@ Upload, download, list, and manage files in AWS S3 with automatic Windows/Linux 
 
 ## Installation
 
+### Local (per-user)
 ```bash
-gh skill install rsevalueserve/copilot-skill-aws-s3 aws-s3
+mkdir -p ~/.config/github-copilot/skills/
+cp -r aws-s3 ~/.config/github-copilot/skills/
+```
+
+### Project (per-repository)
+```bash
+mkdir -p .github/skills/
+cp -r aws-s3 .github/skills/
 ```
 
 ## Usage
